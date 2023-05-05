@@ -1,0 +1,23 @@
+<h1>Tasks#show</h1>
+<%= @task.title.presence || "No title for this task" %>
+
+<h4>
+Task started:
+<%= @task.created_at%>
+</h4>             
+
+<%if @task.created_at != @task.updated_at%>
+
+<h4>
+Task updated:
+<%= @task.updated_at%>
+</h4> 
+<%end%>
+
+
+
+<%= link_to "Edit", edit_project_task_path(@task.project_id, @task.id)%>
+<%= link_to "Back to Project", project_path(@task.project_id)%>
+
+
+</hr>

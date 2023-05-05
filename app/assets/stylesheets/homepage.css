@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'SaturdayAugust';
+    src: url('/assets/SaturdayAugust.ttf');
+}
+
+
+.homepagebody {
+    background-color: red;
+    font-family: "SaturdayAugust";
+}
